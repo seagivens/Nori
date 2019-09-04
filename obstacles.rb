@@ -21,7 +21,7 @@ end
 
 class Fail
   def start
-    puts "Oh Dear. That didn't work at all. Try again?"
+    puts "Oh Dear. That didn't work at all. Would you like to start over?"
     print "> "
     try_again = $stdin.gets.chomp.downcase
 

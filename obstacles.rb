@@ -26,12 +26,12 @@ class Fail
     try_again = $stdin.gets.chomp.downcase
 
 
-    if try_again.include?("y")
-      puts "That's the Spirit!"
-      return 'foyer'
-    else
+    if try_again.include?("no")
       puts "Better luck next time."
       exit
+    else
+      puts "That's the Spirit!"
+      return 'foyer'
     end #ends if/else
   end
 end #ends fail
